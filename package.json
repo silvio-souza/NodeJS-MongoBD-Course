@@ -1,0 +1,24 @@
+{
+  "name": "NodeJS-MongoBD-Course",
+  "version": "1.0.0",
+  "description": "Curso de NodeJS e MongoDB da Udemy",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SJblu/NodeJS-MongoBD-Course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SJblu/NodeJS-MongoBD-Course/issues"
+  },
+  "homepage": "https://github.com/SJblu/NodeJS-MongoBD-Course#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
