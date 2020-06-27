@@ -1,20 +1,9 @@
-const express = require ('express');
-const app = express();
+const app = require('./config/server');
 
-app.set('view engine', 'ejs');
-
-app.get('/', (req, res) => {
-    res.render("home/index");
-});
-
-app.get('/formulario_inclusao_noticias', (req, res) => {
-    res.render("admin/form_add_noticia");
-});
-
-app.get('/noticias', (req, res) => {
-    res.render("noticias/noticias");
-});
+const rotaHome = require('./app/routes/home')(app);
+const rotaNoticias = require('./app/routes/noticias')|(app);
+const rotaFormulario = require('./app/routes/formulario_inclusao_noticias')(app);
 
 app.listen(3000, () => {
-    console.log('Listening on port 3000...');
+    console.log('Server ON!! Listening on port 3000...');
 });
