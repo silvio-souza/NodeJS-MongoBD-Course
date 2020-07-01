@@ -1,6 +1,7 @@
 const mysql = require ('mysql');
 
-module.exports = function () { 
+const connMySql = function () { 
+    console.log('Conexao com o BD estabelecida');
     return mysql.createConnection({
         host : 'localhost',
         user : 'root',
@@ -9,6 +10,9 @@ module.exports = function () {
     });
 }
 
-// module.exports = connection;
+module.exports = () => {
+    console.log('O autoload carregou o modulo de conexao com o BD')
+    return connMySql;
+};
 
         
