@@ -6,7 +6,8 @@ module.exports = (app) => {
         const noticiasModel = app.app.models.noticiasModel;
 
         noticiasModel.getNoticia(connection, (err, result) => {
-            res.render("noticias/noticia", {noticia : result});    
+            res.render("noticias/noticia", {noticia : result});   
+            // res.redirect('/noticias');
         })
         
     });
