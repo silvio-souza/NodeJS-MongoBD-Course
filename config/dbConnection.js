@@ -11,7 +11,6 @@ const connMySql = function () {
 }
 
 module.exports = () => {
-    console.log('O autoload carregou o modulo de conexao com o BD')
     return connMySql;
 };
 
